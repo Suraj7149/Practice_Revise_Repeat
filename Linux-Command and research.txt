@@ -4,5 +4,5 @@ Commands:-
     mkdir <file_name>- to make a new folder in the current directory
     mv <file_name or path/filename> <path> - to move the file from one directory to another
     cv <file_name or path/filename> <path> - to copy one file to the given path
-    ls ls
+
     
