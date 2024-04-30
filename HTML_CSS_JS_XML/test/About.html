@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Demo</title>
+    <link rel="stylesheet" href="main_3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index_3.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index_3.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis pariatur veniam explicabo sint quos. Ad iste reprehenderit ab, adipisci quo sunt distinctio maiores mollitia itaque aliquam esse magnam non!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis pariatur veniam explicabo sint quos. Ad iste reprehenderit ab, adipisci quo sunt distinctio maiores mollitia itaque aliquam esse magnam non!</p>
+                <a href="" class="hello-btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam reiciendis ex excepturi doloribus tempora praesentium aspernatur harum expedita nam itaque, omnis totam? Maxime cupiditate</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with HTML CSS by  <i class="fa fa-heart-o"></i></p>
+    </section>
+    
+<script>
+    var navlinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navlinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
