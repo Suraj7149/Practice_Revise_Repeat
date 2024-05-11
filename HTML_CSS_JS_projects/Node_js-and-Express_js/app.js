@@ -1,8 +1,10 @@
-//local 
-const secret = "Super Secret"
-const sayHi = require('./utils')
-const john = 'John'
+const amount = 9
 
-const peter = 'peter'
+if (amount<10){
+    console.log('small number');
+}
+else {
+    console.log('large number');
+}
 
-sayHi("Suraj")
+console.log("Hello World!");
