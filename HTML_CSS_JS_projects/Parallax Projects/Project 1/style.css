@@ -9,8 +9,8 @@
 
 body {
     background: linear-gradient(#040228, #0075c7);
-    /* min-height: 100vh; */
-    overflow: hidden;
+    min-height: 100vh; 
+    overflow-x: hidden; 
 }
 
 header { 
@@ -46,3 +46,40 @@ header {
     background: #0075b9;
 }
 
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #040228;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec h2:nth-child(2){
+    font-size: 2em;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
