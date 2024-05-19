@@ -1,19 +1,12 @@
 const express = require('express');
-const app = express();
-const PORT = 5000;
- 
-// Single routing
-const router = express.router();
+const { registerUser, loginuser, currentuser } = require('../controllers/userController');
+const router = express.Router();
 
-router.post("/register", (req, res) => {
-    res.json({message: "Register the User" });
-});
+router.post("/register", registerUser);
 
-router.post("/login", (res, req)=> {
-    res.json({ message: "login user" });
-});
+router.post("/login", loginuser);
 
-router.post("/current", (res, req) => {
+router.get("/current", currentuser);
 
-    res.json({ message: "Current user information"});
-});
+
+module.exports = router;
