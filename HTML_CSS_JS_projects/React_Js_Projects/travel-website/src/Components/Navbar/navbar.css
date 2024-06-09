@@ -1,0 +1,183 @@
+Color and Styling
+:root {
+    --PrimaryColor: hsl(199,100%, 33%);
+    --gradientColor: linear-gradient(to right, hsl(187,85%, 43%), hsl(199, 100%, 33%));
+    --SecondaryColor: hsl(186, 85%, 43%);
+    --WhiteColor: hsl(0,0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --WhiteColorDeam: hsl(0,0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --CardBG: rgb(225, 225, 235);
+}
+
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: var(--WhiteColorDeam); */
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(35, 25, 55, 0.16);
+    box-shadow: 0 0px 30px rgba(2227, 228, 237, 0.37);
+}
+
+
+.logo{
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .icon{
+    font-size: 25px;
+    color: var(--WhiteColor);
+    transform: translateY(5px);
+}
+
+.toggleNavbar{
+    .icon{
+        font-size: 25px;
+        color: var(--WhiteColor);
+    }
+}
+.toggleNavbar:hover.icon{
+    color: var(--SecondaryColor);
+}
+
+
+@media screen and (max-width: 768px){
+    .navBar {
+        position: absolute;
+        background: var(--WhiteColorDeam);
+        height: max-content;
+        width: 90%;
+        border-radius: 1rem;
+        top: -50rem;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 1rem;
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        transition: 1s ease-in-out;
+    }
+
+    .activeNavbar{
+        top: 5rem;
+        /* transition: 1.7s ease; */
+    }
+
+
+
+    .navLists {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: .5rem;
+    }
+
+    .navItem{
+        padding: .5rem 0;
+    }
+
+    .navLink{
+        color: var(--textColor);
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .navLink:hover{
+        color: var(--PrimaryColor);
+        font-size: 1.1rem;
+        text-decoration: underline;
+            
+    }
+
+    .btn {
+        margin-top: 1rem;  
+    }
+
+    .btn a {
+        color: var(--WhiteColor);
+        font-weight: 600;
+    }
+    .btn a:hover{
+        text-decoration: underline;
+    }
+
+    .closeNavbar{
+        position: absolute;
+        font-size: 2rem;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+    }
+    .closeNavbar:hover{
+        color: var(--SecondaryColor);
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px){
+    .toggleNavbar, .closeNavbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .navBar .navLists{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .navItem .navLink{
+        color: var(--textColor);
+        padding: 0 0.45rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .navItem .navLink:hover{
+        color: var(--WhiteColor);
+    }
+
+    .btn{
+        margin-left: 1rem;        
+    }
+    .btn a{
+        color: var(--WhiteColor);
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (min-width: 960px){
+
+    .navLists .navItem{
+        padding: 0 0.7rem;
+    }
+
+}
+
+@media screen and (min-width: 1240px){
+
+    .header{
+        padding: 1rem 8.5rem;
+    }
+
+}
