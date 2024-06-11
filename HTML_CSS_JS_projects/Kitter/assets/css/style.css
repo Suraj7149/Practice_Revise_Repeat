@@ -176,9 +176,9 @@ body {
   #HEADER
 \*-----------------------------------*/
 
-.action-btn.user {
+/* .action-btn.user {
   display: none;
-}
+} */
 
 .header {
   position: absolute;
@@ -209,14 +209,10 @@ body {
 }
 
 .nav-toggle-btn.active .menu-icon,
-.nav-toggle-btn .close-icon {
-  display: none;
-}
+.nav-toggle-btn .close-icon { display: none; }
 
-.nav-toggle-btn.active .menu-icon, 
-.nav-toggle-btn .close-icon {
-  display: none;
-}
+.nav-toggle-btn .menu-icon,
+.nav-toggle-btn.active .close-icon { display: block; }
 
 .logo {
   font-family: var(--ff-carter_one);
@@ -282,7 +278,17 @@ body {
 
 .navbar-action-btn {
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background-color: var(--sonic-silver);
+  color: var(--white);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  text-align: center;
+  /* border-radius: var(--radius-4);
+  box-shadow: 0 25px 0 40px var(--platinum); */
 }
 
 
