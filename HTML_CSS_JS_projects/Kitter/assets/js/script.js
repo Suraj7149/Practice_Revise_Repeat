@@ -24,3 +24,26 @@ const toggleNavbar = function () {
   
 addEventOnElem(navToggler, "click", toggleNavbar);
 
+
+const closeNavbar = function() {
+  navbar.classList.remove("active");
+  navToggler.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar); 
+
+/**
+ *  active header when window scroll down to 180px
+ */
+
+const header = document.querySelector("[data-header]");
+
+const activeElementOnScroll = function() {
+  if (window.scrollY > 180) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+}
+
+addEventOnElem(window, "scroll", activeElementOnScroll);
