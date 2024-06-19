@@ -465,7 +465,7 @@ body {
 
 .offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
 
-.offer-card:is(:hover, :focus-within) { animation: shrink 5s infinite alternate;
+.offer-card:is(:hover, :focus-within) { animation: shrink 1s infinite alternate;
 }
 
 @keyframes shrink {
@@ -712,6 +712,27 @@ body {
   #BACK TO TOP
 \*-----------------------------------*/
 
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--portland-orange);
+  color: var(--white);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  z-index: 4;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
 
 .back-top-btn {
   position: fixed;
@@ -743,7 +764,16 @@ body {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
+<<<<<<< HEAD:HTML_CSS_JS_projects/Pet-Food-Store-Demo/assets/css/style.css
 @media (min-width: 575px) {
+=======
+
+/**
+ * responsive for large than 575px screen
+ */
+
+ @media (min-width: 575px) {
+>>>>>>> b180b60fb9f3dccd35272c2acb655374d336e6a3:HTML_CSS_JS_projects/Kitter/assets/css/style.css
 
   /**
    * CUSTOM PROPERTY
@@ -1081,8 +1111,11 @@ body {
 
 
 
+<<<<<<< HEAD:HTML_CSS_JS_projects/Pet-Food-Store-Demo/assets/css/style.css
 
 
+=======
+>>>>>>> b180b60fb9f3dccd35272c2acb655374d336e6a3:HTML_CSS_JS_projects/Kitter/assets/css/style.css
 /**
  * responsive for large than 1200px screen
  */
